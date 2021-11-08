@@ -1,0 +1,27 @@
+.light {
+  background-color: #ffffff;
+  color: #222222;
+  /* border: 1px solid #222222; */
+}
+
+.dark {
+  background-color: #222222;
+  color: #ffffff;
+  /* border: 1px solid #ac9e9e; */
+}
+
+.mode-toggle {
+  border: none;
+  height: auto;
+  width: auto;
+}
+
+.mode-toggle img {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+  .mode-toggle {
+    border: none;
+  }
+}

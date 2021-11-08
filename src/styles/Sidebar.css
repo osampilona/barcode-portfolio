@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 100vh; */
+  width: 6%;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+@media (max-device-width: 800px) and (orientation: portrait) {
+  .sidebar {
+    display: none !important;
+  }
+}
