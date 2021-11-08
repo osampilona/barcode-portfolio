@@ -11,6 +11,7 @@ function App() {
 
   return (
     <>
+      <h1>Hi</h1>
       <Router>
         <div className={`App ${mode}`}>
           <Sidebar categoryNumb={1} />
