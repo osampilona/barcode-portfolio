@@ -5,13 +5,14 @@
 }
 
 .white {
-  height: 50%;
+  height: 100%;
+  width: 100%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
+  text-decoration: none;
 }
 
 .one {
@@ -20,8 +21,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
+  text-decoration: none;
 }
 
 .white h1 {
