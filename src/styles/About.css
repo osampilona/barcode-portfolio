@@ -14,17 +14,67 @@
   overflow-y: scroll;
 }
 
-.text {
-  padding: 5%;
-  width: 100%;
+.description-container {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 80%;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
   height: 100%;
+  width: 20%;
+  padding-left: 5%;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: yellow; */
+  height: 100%;
+  width: 70%;
+  padding: 2%;
+}
+
+.number-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  justify-content: flex-start;
+  /* background-color: pink; */
+  height: 100%;
+  width: 30%;
+  padding: 2%;
 }
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+.text {
+  display: flex;
+  /* background-color: coral; */
+  height: 100%;
+  width: 80%;
+  text-align: justify;
+  padding-right: 10%;
+}
+
+.text p {
+  font-size: 24px;
+}
+
 .light {
   background-color: #ffffff;
   color: #222222;
@@ -33,6 +83,16 @@
 .dark {
   background-color: #222222;
   color: #ffffff;
+}
+
+.anti-light {
+  background-color: #fff;
+  color: #222222;
+}
+
+.anti-dark {
+  background-color: #222;
+  color: #fff;
 }
 
 .icon {
@@ -55,5 +115,63 @@
 @media (max-width: 800px) and (orientation: portrait) {
   .icon {
     display: none;
+  }
+
+  .description-container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+
+  .title-box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 80%;
+    padding-left: 0;
+  }
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: yellow; */
+    height: 100%;
+    width: auto;
+    padding: 2%;
+  }
+
+  .number-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-color: pink; */
+    height: 100%;
+    width: auto;
+    padding: 2%;
+  }
+
+  .number {
+    animation: none;
+  }
+
+  .text {
+    display: flex;
+    /* background-color: coral; */
+    height: 100%;
+    width: 80%;
+    text-align: justify;
+    padding-right: 0;
+  }
+
+  .text p {
+    font-size: 18px;
   }
 }

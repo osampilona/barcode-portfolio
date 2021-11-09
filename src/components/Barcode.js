@@ -2,25 +2,18 @@ import React, { useState } from "react";
 import { useTheme } from "../hooks/useTheme";
 import "../styles/Barcode.css";
 
-function Barcode({
-  themeColor,
-  // myBarcode,
-  // longThinLine,
-  // `long-thick `,
-  // shortThinLine,
-  // `short-thick ${mode}`,
-}) {
+function Barcode() {
   const [line, setLine] = useState("not-visible");
   const { mode, antimode } = useTheme();
 
   const lineShow = () => {
-    if (useTheme === "all-together") {
+    if (useTheme === "barcode") {
       setLine("visible");
     } else {
       setLine("visible-dark");
     }
 
-    if (useTheme === "all-together-dark") {
+    if (useTheme === "barcode dark") {
       setLine("visible-dark");
     } else {
       setLine("visible");
