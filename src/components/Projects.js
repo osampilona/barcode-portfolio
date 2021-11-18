@@ -3,6 +3,7 @@ import ToggleIcon from "./ToggleIcon";
 import "../styles/Projects.css";
 import Navbar from "./Navbar";
 import { useTheme } from "../hooks/useTheme";
+import TopNavBar from "./TopNavBar";
 
 const Projects = () => {
   const [hovering, setHovering] = useState(false);
@@ -61,9 +62,7 @@ const Projects = () => {
   return (
     <>
       <div className="grid-container">
-        <div className="icon">
-          <ToggleIcon />
-        </div>
+        <TopNavBar />
         <Navbar />
         <div className="main-grid">
           <div

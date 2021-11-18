@@ -4,6 +4,7 @@ import "../styles/About.css";
 import { useTheme } from "../hooks/useTheme";
 import Navbar from "./Navbar";
 import ToggleIcon from "./ToggleIcon";
+import Barcode from "./Barcode";
 
 const About = () => {
   const { mode, antimode } = useTheme();

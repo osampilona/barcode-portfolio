@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.container-gallery {
   width: 100%;
   height: 100%;
   display: flex;
@@ -14,19 +14,107 @@
   overflow-y: scroll;
 }
 
-.container::-webkit-scrollbar {
+.image-gallery {
+  width: 100%;
+  height: auto;
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  grid-gap: 15px;
+  margin-bottom: 5%;
+}
+
+.image-gallery img:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.image-gallery img:nth-child(9) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.image-gallery img:nth-child(14) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.image-gallery img:nth-child(24) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.image-gallery img:nth-child(27) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.image-gallery img:nth-child(28) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.image-gallery img:nth-child(32) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.image-gallery img:nth-child(33) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.image-gallery img:nth-child(6n + 1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .image-gallery {
+  width: 100px;
+  height: 100px;
+} */
+
+.container-gallery::-webkit-scrollbar {
   /* display: none; */
   width: 0.5vw;
 }
-.container.light::-webkit-scrollbar-thumb {
+.container-gallery.light::-webkit-scrollbar-thumb {
   width: 0.5vw;
   background-color: #222;
 }
-.container.dark::-webkit-scrollbar-thumb {
+.container-gallery.dark::-webkit-scrollbar-thumb {
   width: 0.5vw;
   background-color: #fff;
 }
 
+.light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.dark {
+  background-color: #222222;
+  color: #ffffff;
+}
+
 .icon {
   border: none;
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+  .icon {
+    display: none;
+  }
+
+  .image-gallery {
+    grid-column: 1fr;
+    margin: auto;
+  }
+
+  .image-gallery > img {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
 }
