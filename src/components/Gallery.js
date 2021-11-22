@@ -5,7 +5,6 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import TopNavBar from "./TopNavBar";
 import axios from "axios";
-import { REACT_APP_URL } from "../config";
 import ScaleLoader from "react-spinners/ScaleLoader";
 
 const Gallery = () => {
@@ -13,7 +12,8 @@ const Gallery = () => {
   const [photos, setPhotos] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const url = REACT_APP_URL;
+  const url =
+    "https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=5451c2897d3a840e3c28d09d58e6e8be&photoset_id=72157720154013699&user_id=194422781%40N07&format=json&nojsoncallback=1";
 
   useEffect(() => {
     const getData = async () => {
