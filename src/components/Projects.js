@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ToggleIcon from "./ToggleIcon";
 import "../styles/Projects.css";
 import Navbar from "./Navbar";
 import { useTheme } from "../hooks/useTheme";
@@ -70,35 +69,80 @@ const Projects = () => {
             onMouseEnter={useHover}
             onMouseLeave={reset}
           >
-            {hovering ? "This is my 1st project" : null}
+            {hovering ? (
+              <a
+                className={`project-1 ${antimode}`}
+                href="https://vigilant-williams-d3cf74.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3>Hotel</h3>
+              </a>
+            ) : null}
           </div>
           <div
             className={`project-2 ${antimode}`}
             onMouseEnter={useHover2}
             onMouseLeave={reset}
           >
-            {hovering2 ? "This is my 2nd project" : null}
+            {hovering2 ? (
+              <a
+                className={`project-1 ${antimode}`}
+                href="https://zen-noether-7821f8.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3>Finance</h3>
+              </a>
+            ) : null}
           </div>
           <div
             className={`project-3 ${antimode}`}
             onMouseEnter={useHover3}
             onMouseLeave={reset}
           >
-            {hovering3 ? "This is my 3rd project" : null}
+            {hovering3 ? (
+              <a
+                className={`project-1 ${antimode}`}
+                href="https://vibrant-yonath-0d9281.netlify.app/index.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3>Local Portal</h3>
+              </a>
+            ) : null}
           </div>
           <div
             className={`project-4 ${antimode}`}
             onMouseEnter={useHover4}
             onMouseLeave={reset}
           >
-            {hovering4 ? "This is my 4th project" : null}
+            {hovering4 ? (
+              <a
+                className={`project-1 ${antimode}`}
+                href="https://optimistic-lichterman-4db04d.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                yTalent
+              </a>
+            ) : null}
           </div>
           <div
             className={`project-5 ${antimode}`}
             onMouseEnter={useHover5}
             onMouseLeave={reset}
           >
-            {hovering5 ? "This is my 5th project" : null}
+            {hovering5 ? (
+              <a
+                className={`project-1 ${antimode}`}
+                href="https://pedantic-leakey-0f6081.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                YouTube
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
