@@ -2,7 +2,6 @@ import React from "react";
 import modeIcon from "../assets/mode-icon.svg";
 import { useTheme } from "../hooks/useTheme";
 import "../styles/ModeToggle.css";
-import Barcode from "./Barcode";
 
 const ToggleIcon = () => {
   const { changeMode, changeAntimode, mode, antimode } = useTheme();
