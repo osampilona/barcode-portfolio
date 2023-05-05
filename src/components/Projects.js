@@ -56,8 +56,6 @@ const Projects = () => {
     setHovering5(false);
   };
 
-  // console.log(hovering);
-
   return (
     <>
       <div className="grid-container">

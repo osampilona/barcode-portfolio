@@ -14,7 +14,7 @@ function Sidebar({ categoryNumb }) {
             <Categories
               key={id}
               name="Martina"
-              lastName="Brzica"
+              lastName="Miljak"
               single={true}
             />
           );

@@ -7,8 +7,8 @@ function Footer() {
 
   return (
     <section className={`footer ${mode}`}>
-      <h1>Martina Brzica</h1>
-      <h3>martinabrzica.job@gmail.com</h3>
+      <h1>Martina Miljak</h1>
+      <h3>martinamiljak92@gmail.com</h3>
       <p>Thank you for visiting</p>
     </section>
   );
